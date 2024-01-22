@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cookie Clicker</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jave.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <img id="cookie" src="cookie.png" alt="Cookie Image" onclick="clickCookie()">
+    
+    <p id="clickCount">Cookies <span id="clicks">0</span></p>
+    
+    <button class="button" onclick="clickCookie()">Click me!</button>
+    <button class="button" onclick="resetClicks()">Reset</button>
+    <button class="button" onclick="buyUpgrade()">Upgrade Image </button>
+
+    <div id="upgradeList">
+        <h2>Upgrades:</h2>
+        <button class="button" id="upgrade1" onclick="buyUpgrade(1)">Upgrade 1 (Cost: 10 cookies, +1/sec)</button>
+        <button class="button" id="upgrade2" onclick="buyUpgrade(2)">Upgrade 2 (Cost: 20 cookies, +2/sec)</button>
+        
+    </div>
     
 </body>
 </html>
